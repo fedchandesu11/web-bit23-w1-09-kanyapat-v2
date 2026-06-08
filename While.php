@@ -11,7 +11,7 @@
         echo "<h1 style='color:blue'>W1 - kanyapat chitngen bit23 09</h1>";
     ?>
 
-    <a href="While.php">while Loop</a>
+    <a href="index.php">for Loop</a>
 
     <form action="">
         <label For="">เลขแม่สูตรคูณ</label> <br>
@@ -27,9 +27,10 @@
 
            echo "<h2> สูตรคูณแม่ ". $num ."</h2>";
 
-           //. เริ่มต้น      สิ้นสุด    เพิ่มทีละ
-           for($i = 1; $i <= 12; $i++ ){
+           $i = 1;
+           while($i <= 12){
                 echo $num . " x " . $i . " = " . $num * $i . "<br>" ;
+                $i++;
            }
         }
     ?>
@@ -45,6 +46,7 @@
 
     h1{
         text-align:center;
+        letter-spacing:2px;
         margin-bottom:20px;
     }
 
@@ -58,12 +60,16 @@
         margin-bottom:20px;
     }
 
+    a:hover{
+        background:#1d4ed8;
+    }
+
     form{
         background:white;
         padding:20px;
         border-radius:10px;
         box-shadow:0 2px 8px rgba(0,0,0,0.08);
-        max-width:300px;
+        max-width:320px;
         margin-bottom:20px;
     }
 
@@ -97,6 +103,10 @@
         color:#1e40af;
         border-bottom:2px solid #dbeafe;
         padding-bottom:5px;
-        max-width:300px;
+        max-width:320px;
+    }
+
+    br{
+        line-height:1.8;
     }
 </style>
