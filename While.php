@@ -34,9 +34,7 @@
            }
         }
     ?>
-</body>
-</html>
-<style>
+    <style>
     body{
         font-family: Arial, sans-serif;
         background:#f5f7fa;
@@ -110,3 +108,5 @@
         line-height:1.8;
     }
 </style>
+</body>
+</html>
